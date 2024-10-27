@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariam B. Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a class="navbar__link navbar__logo" href="#">M&B</a>
+            <a class="navbar__link"  href="#about_me">обо мне</a>
+            <a class="navbar__link" href="#projects">проекты</a>
+            <a class="navbar__link" href="#contacts">контакты</a>
+        </nav>
+
+        <div class="progress">
+            <div class="progress__container">
+                <div class="progress__bar myBar"></div>
+            </div>
+        </div>
+
+        <div class="heading">
+            <h2 class="heading__text">Mariam’s</h2>
+            <h2 class="heading__text">Portfolio</h2>
+
+
+            <div class="heading__btn">
+                <svg class="heading__btn-svg" xmlns="http://www.w3.org/2000/svg" width="175" height="69" viewBox="0 0 175 69" fill="none">
+                    <path d="M174.106 19.0867C174.827 23.0201 173.215 27.2637 169.517 31.6025C165.823 35.9375 160.096 40.3038 152.745 44.4465C138.048 52.7293 116.957 60.0617 92.9586 64.4619C68.9602 68.862 46.6399 69.489 29.9599 66.9593C21.6174 65.6941 14.7143 63.6434 9.72218 60.9011C4.72561 58.1565 1.7129 54.7608 0.99171 50.8274C0.270518 46.894 1.88256 42.6504 5.58037 38.3117C9.27492 33.9767 15.0014 29.6103 22.3524 25.4677C37.0499 17.1849 58.1407 9.85243 82.1391 5.4523C106.137 1.05218 128.458 0.425153 145.138 2.95486C153.48 4.22009 160.383 6.27081 165.375 9.01304C170.372 11.7577 173.385 15.1534 174.106 19.0867Z" stroke="#C83A78"/>
+                </svg>
+
+                <a href="https://github.com/mar-bdv" class="heading__btn-link" target="_blank">github</a>
+            </div>
+        </div>
+    </header>
+
+    
+
+    <main>
+
+        
+        <div class="b-marquee">
+            <div class="b-marquee__text">
+                <span class="b-marquee__span">my projects </span>
+                <span class="b-marquee__span">my projects </span>
+                <span class="b-marquee__span">my projects </span>
+                <span class="b-marquee__span">my projects </span>
+                <span class="b-marquee__span">my projects </span>
+                <span class="b-marquee__span">my projects </span>
+                <span class="b-marquee__span">my projects </span>
+                <span class="b-marquee__span">my projects </span>
+            </div>
+        </div>
+
+        <div id="projects" class="projects__container">
+            <div class="projects-header">
+                <h2 class="projects-header__text">Мои проекты</h2>
+                <p class="projects-header__warning"> *Демо сайтов может загружаться медленно, это связано с особенностями хостинга. Рекомендую включить VPN для более стабильного доступа! :)</p>
+            </div>
+
+            <div class="projects__columns">
+                <div class="projects__block">
+                    <div class="projects__block-img">
+                        <h3 class="project__block-img__title">Интернет-магазин украшений "Sparkle"</h3>
+                        <img class="project__block-img__image" src="https://i.ibb.co/pJkVQYM/for-portfolio-sparkle.png" alt="Template">
+                    </div>
+                    
+
+                    <div class="projects__block-text">
+                        <p class="projects__block-text__descr">
+                            Sparkle Shop — это демонстрационный интернет-магазин, созданный с использованием современных веб-технологий. Проект сочетает адаптивный дизайн, динамическую генерацию контента и удобное взаимодействие с API для аутентификации пользователей и управления заказами, создавая плавный и интуитивно понятный опыт для каждого.
+                            </p>
+                        <br/>
+                        <p class="projects__block-text__span">код можно посмотреть здесь: <a class="projects__block-text__link" href="https://github.com/mar-bdv/sparkle-shop" target="_blank">GITHUB</a></p>
+                        <br/>
+                        <div class="projects__block-text__btn">
+                            <a class="projects__block-text__btn-link" href="https://sparkle-shop.vercel.app/" target="_blank">посмотреть демо</a>
+
+                            <a class="projects_block-text__btn-descr" href="#" data-project="1" id="openModalBtn">Подробнее о проекте </a>
+                        </div>
+
+
+                    </div>
+                    
+                </div>
+
+                <div class="projects__block">
+                    <div class="projects__block-img">
+                        <h3 class="project__block-img__title">Мебельный интернет-магазин</h3>
+                        <img class="project__block-img__image" src="https://i.ibb.co/SssLhTv/dreamspace-portfolio.png" alt="Template">
+                    </div>
+                    
+                    <div class="projects__block-text">
+                        <p class="projects__block-text__descr">
+                            Этот проект — интернет-магазин мебели и товаров для дома, созданный на основе стека технологий PERN (PostgreSQL, Express, React и Node.js). В нём реализованы удобные списки товаров, корзина покупок и система регистрации пользователей. Магазин сочетает интуитивный интерфейс и надёжную работу с данными, обеспечивая удобство и простоту использования.
+                            </p>
+                        <br/>
+                        <p class="projects__block-text__span">код можно посмотреть здесь: <a class="projects__block-text__link" href="https://github.com/mar-bdv/reactshop" target="_blank">GITHUB</a></p>
+                        <br/>
+                        <div class="projects__block-text__btn">
+                            <a class="projects__block-text__btn-link" href="https://reactshop-client.onrender.com/" target="_blank">посмотреть демо</a>
+                            <a class="projects_block-text__btn-descr" href="#" data-project="2" id="openModalBtn">Подробнее о проекте </a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="projects__block">
+                    <div class="projects__block-img">
+                        <h3 class="project__block-img__title">Приложение Погоды</h3>
+                        <img class="project__block-img__image" src="https://i.ibb.co/cY7CrCp/weather-portfolio.png" alt="Template">
+                    </div>
+                    
+                    <div class="projects__block-text">
+                        <p class="projects__block-text__descr">
+                            Простое приложение о погоде, созданное на JavaScript. Это приложение извлекает данные о погоде в реальном времени из внешнего API, позволяя пользователям выполнять поиск погодных условий по городам.
+                            </p>
+                        <br/>
+                        <p class="projects__block-text__span">код можно посмотреть здесь: <a class="projects__block-text__link" href="https://github.com/mar-bdv/mb-weather-app" target="_blank">GITHUB</a></p>
+                        <br/>
+                        <button class="projects__block-text__btn">
+                            <a class="projects__block-text__btn-link" href="https://weather-app-pq2n.onrender.com/" target="_blank">посмотреть демо</a>
+                            <a class="projects_block-text__btn-descr" href="#" data-project="3" id="openModalBtn">Подробнее о проекте </a>                        
+                        </button>
+                    </div>
+                </div>
+
+                
+                <div class="projects__block">
+                    <div class="projects__block-img">
+                        <h3 class="project__block-img__title">Календарь</h3>
+                        <img class="project__block-img__image" src="https://i.ibb.co/CVpktqW/calendar-portfolio.png" alt="Template">
+                    </div>
+                    
+                    <div class="projects__block-text">
+                        <p class="projects__block-text__descr">
+                            Календарь на JavaScript, который предоставляет возможность просмотра всех годов и добавления событий. Все добавленные события сохраняются в localStorage, что позволяет пользователю легко управлять своим расписанием даже при перезагрузке страницы. 
+
+                            </p>
+                        <br/>
+                        <p class="projects__block-text__span">код можно посмотреть здесь: <a class="projects__block-text__link" href="https://github.com/mar-bdv/events-calendar" target="_blank">GITHUB</a></p>
+                        <br/>
+                        <button class="projects__block-text__btn">
+                            <a class="projects__block-text__btn-link" href="https://mar-bdv.github.io/events-calendar/" target="_blank">посмотреть демо</a>
+                        </button>
+                    </div>
+                </div>
+
+                
+                <div class="projects__container__btn">
+                    <svg class="projects__container__btn-svg" xmlns="http://www.w3.org/2000/svg" width="175" height="69" viewBox="0 0 175 69" fill="none">
+                        <path d="M174.106 19.0867C174.827 23.0201 173.215 27.2637 169.517 31.6025C165.823 35.9375 160.096 40.3038 152.745 44.4465C138.048 52.7293 116.957 60.0617 92.9586 64.4619C68.9602 68.862 46.6399 69.489 29.9599 66.9593C21.6174 65.6941 14.7143 63.6434 9.72218 60.9011C4.72561 58.1565 1.7129 54.7608 0.99171 50.8274C0.270518 46.894 1.88256 42.6504 5.58037 38.3117C9.27492 33.9767 15.0014 29.6103 22.3524 25.4677C37.0499 17.1849 58.1407 9.85243 82.1391 5.4523C106.137 1.05218 128.458 0.425153 145.138 2.95486C153.48 4.22009 160.383 6.27081 165.375 9.01304C170.372 11.7577 173.385 15.1534 174.106 19.0867Z" stroke="#C83A78"/>
+                    </svg>
+
+                    <a href="https://github.com/mar-bdv" class="projects__container-link" target="_blank">github</a>
+                </div>
+
+            </div>
+        </div>
+
+            
+        <div class="b-marquee">
+            <div class="b-marquee__text">
+                <span class="b-marquee__span">about me </span>
+                <span class="b-marquee__span">about me </span>
+                <span class="b-marquee__span">about me </span>
+                <span class="b-marquee__span">about me </span>
+                <span class="b-marquee__span">about me </span>
+                <span class="b-marquee__span">about me </span>
+                <span class="b-marquee__span">about me </span>
+                <span class="b-marquee__span">about me </span>
+            </div>
+        </div>
+
+        <div id="about_me" class="main__container">
+            <div class="main-header">
+                <h2 class="main-header__text">Обо мне</h2>
+            </div>
+
+            <div class="main-blocks">
+                <div class="main-blocks__data">
+                    <p class="main-blocks__par"><span class="main-blocks__span">дата рождения:</span> 2 марта 2007г</p>
+                    <p class="main-blocks__par"><span class="main-blocks__span">гражданство:</span> Россия</p>
+                    <p class="main-blocks__par"><span class="main-blocks__span">пол:</span> Женский</p>
+                    <p class="main-blocks__par"><span class="main-blocks__span">образование:</span> учусь на 4 курсе в колледже</p>
+                </div>
+                
+                <div class="main-blocks__text">
+                    <p class="main-blocks__par">
+                        Привет! Я начинающий фронтенд-разработчик, увлекаюсь созданием современных и удобных веб-приложений. Постоянно развиваюсь, изучаю новые технологии и готова применить свои знания на практике в реальных проектах. Ищу команду и проекты, где смогу расти как разработчик.
+                    </p>
+                    
+                </div>
+            </div>
+
+            <div class="main-columns">
+                <div class="main-columns__software main-columns_all">
+                    <h2 class="main-columns__title">Tech Stack:</h2>
+
+                    <ul class="main-columns__list">
+                        <li class="main-columns__item">
+                            HTML5 / CSS3 / SASS / SCSS
+                        </li>
+                        <li class="main-columns__item">
+                            БЭМ
+                        </li>
+                        <li class="main-columns__item">
+                            JavaScript ES6 + API + AJAX
+                        </li>
+                        <li class="main-columns__item">
+                            GSAP animations
+                        </li>
+                        <li class="main-columns__item">
+                            Git / Github
+                        </li>
+                        <li class="main-columns__item">
+                            Netlify, Render, GitHub, Git, Vercel
+                        </li>
+                        <li class="main-columns__item">
+                            React js, React Router
+                        </li>
+                        <li class="main-columns__item">
+                            Postman 
+                        </li>
+                        <li class="main-columns__item">
+                            Figma
+                        </li>
+                    </ul>
+                    
+
+                    <p class="main-columns__title">Currently <br> learning:</p>
+                    <ul class="main-columns__list">
+                        <li class="main-columns__item">
+                            React (на более глубоком уровне)
+                        </li>
+                        <li class="main-columns__item">
+                            Redux
+                        </li>
+                        <li class="main-columns__item">
+                            PostgreSQL,
+                        </li>
+                        <li class="main-columns__item">
+                            Node.js                     
+                        </li>
+                        <li class="main-columns__item">
+                            Vite, Webpack
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="main-columns__character main-columns_all">
+                    <h2 class="main-columns__title">Мои качества:</h2>
+
+                    <ul class="main-columns__list">
+                        <li class="main-columns__item">
+                            <strong>Упорство:</strong>
+                            <ul><li>я не сдаюсь при возникновении сложностей и стараюсь находить решения.</li></ul>
+                        </li>
+                        <li class="main-columns__item">
+                            <strong>Творческий подход: </strong>
+                            <ul><li>люблю находить необычные решения для задач и применять креативные идеи.</li></ul>
+                        </li>
+                        <li class="main-columns__item">
+
+                            <strong>Готовность учиться:</strong>
+                            <ul><li>постоянно стремлюсь улучшать свои навыки и изучать новые технологии.</li></ul>
+
+                        </li>
+                        <li class="main-columns__item">
+                            <strong>Внимание к деталям:</strong>
+                            <ul><li>стараюсь тщательно проверять свою работу, чтобы избежать ошибок.</li></ul>
+                        </li>
+                        <li class="main-columns__item">
+                            <strong>Самоорганизация: </strong>
+                            <ul><li>умею эффективно планировать свое время и расставлять приоритеты.</li></ul>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+
+                <div class="main-columns__langs main-columns_all">
+                    <h2 class="main-columns__title">Языки:</h2>
+                    
+                    <div class="main-columns__lang">
+                        <span class="main-columns__up">Русский</span>
+                        <span class="main-columns__down">Native</span>
+                    </div>
+                    <div class="main-columns__lang">
+                        <span class="main-columns__up">Английский</span>
+                        <span class="main-columns__down">Intermediate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#top" id="back-to-top" class="back-to-top" title="Back to top">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 24C3 35.598 12.402 45 24 45C35.598 45 45 35.598 45 24C45 12.402 35.598 3 24 3C12.402 3 3 12.402 3 24ZM48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24ZM25.5 34.5C25.5 35.3284 24.8284 36 24 36C23.1716 36 22.5 35.3284 22.5 34.5V17.1213L16.0607 23.5607C15.4749 24.1464 14.5251 24.1464 13.9393 23.5607C13.3536 22.9749 13.3536 22.0251 13.9393 21.4393L22.9393 12.4393C23.5251 11.8536 24.4749 11.8536 25.0607 12.4393L34.0607 21.4393C34.6465 22.0251 34.6465 22.9749 34.0607 23.5607C33.4749 24.1464 32.5251 24.1464 31.9393 23.5607L25.5 17.1213V34.5Z" fill="black"/>
+            </svg>
+        </a>
+
+        
+        <div class="b-marquee">
+            <div class="b-marquee__text">
+                <span class="b-marquee__span">contact me </span>
+                <span class="b-marquee__span">contact me </span>
+                <span class="b-marquee__span">contact me </span>
+                <span class="b-marquee__span">contact me </span>
+                <span class="b-marquee__span">contact me </span>
+                <span class="b-marquee__span">contact me </span>
+                <span class="b-marquee__span">contact me </span>
+                <span class="b-marquee__span">contact me </span>
+            </div>
+        </div>
+
+        <div id="contacts" class="contacts__container">
+            <div class="contacts-header">
+                <h2 class="contacts-header__text">Контакты</h2>
+            </div>
+
+            <div class="contacts__block">
+                
+                <p class="contacts__block-par">Если вы хотите со мной связаться:</p>
+
+                <br>
+
+                <div class="contacts__block-list">
+                    <p class="contacts__block-list_name">Email: <br> 
+                        <p class="contacts__block-list_link">mariam.bbvv@gmail.com</p>
+                    </p>
+
+                    <br>
+
+                    <p class="contacts__block-par">Также:</p>
+                    <br>
+
+
+                    <p class="contacts__block-list_name">Github: <br> 
+                        <a class="contacts__block-list_link" href="https://github.com/mar-bdv" target="_blank" >mar-bdv</a>
+                    </p>
+
+                    <br>
+
+                    <p class="contacts__block-list_name">CodeWars: <br> 
+                        <a class="contacts__block-list_link" target="_blank" href="https://www.codewars.com/users/mariam_bbvv">mariam_bbvv</a>
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="main__back">
+                <a class="main__back-text" href="">Вернуться наверх</a>
+            </div>
+
+
+        </div>
+    
+    </main>
+
+    <footer>
+        
+        <div class="footer_info">
+            <p>
+                2024,
+                <br>
+                Марьям Б.
+            </p>
+
+        </div>
+
+    </footer>
+    
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">Описание проекта</h2>
+            <p id="modalText">Здесь будет текст о проекте, описание и другие детали.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
